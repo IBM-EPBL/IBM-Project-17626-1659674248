@@ -1,0 +1,60 @@
+<html>
+<head>
+      
+     
+     <link rel="stylesheet"  href="li.css"> 
+</head>
+<body>
+  <div class="container">
+        <div class="navbar">
+             <img src="swiggylogo.png" class="logo">
+             <nav >
+		     <ul id="menuList">
+    		       <li><a href="">Menu card</a></li>
+    		       <li><a href="">Vegetarian</a></li>
+    		       <li><a href="">Non-Vegetarian</a></li>
+    		       <li><a href="">Orders</a></li>
+		     </ul>
+	         </nav>
+              <img src="menuu.png" class="menu-icon" 
+              onclick="togglemenu()">
+        </div>
+	<div class="row">
+		<div class="col-1">
+			<h2>Swiggy Offer <br>latest version</h2>
+			<h3>Discount 20% on each order </h3>
+			<p>Swiggy offers you no restriction in order and you can even order for a minimum amount. Thus you can order food for yourself and to your friends. Swiggy promises to deliver food in 40 minutes and holds an average delivery time 37 minutes. So,food delivery with Swiggy is super fast.   
+                  </p>
+			<h4>Special offers on Wednesday</h4>
+                  <button type="button">Order <img src="click it.png">
+                  </button>
+		</div>
+		<div class="col-2">
+                <img src="honeychicken.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                  <img src="pluss.png">
+                  <p><small>Place your Order</small></p>
+                </div>
+             </div>
+      
+	 
+  </div>
+
+  <script>
+     var menuList = document.getElementById("menuList");
+     menuList.style.maxHeight = "0px";
+     function togglemenu(){
+          if(menuList.style.maxHeight == "0px")
+                {
+                       menuList.style.maxHeight = "130px";
+                }
+          else
+                {
+                       menuList.style.maxHeight = "0px";
+                }
+      }
+   </script>
+
+</body>
+</html>
